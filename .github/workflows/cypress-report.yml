@@ -1,14 +1,18 @@
-name: Create Cypress report
+# This workflow will do a clean install of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Node.js CI
+
 on:
   push:
-    branches:
-      - 'master'
+    branches: [ master ]
+     
 jobs:
-  uses: cypress-e2e-chrome81:
-  name: Run on Chrome 81
-  runs-on: ubuntu-18.04
-  container: cypress/browsers:node12.16.2-chrome81-ff75
-  steps:
+  cypress-test:
+   name: run on Chrome 88
+   runs-on: ubuntu-18.04
+   container: cypress/browsers:node12.16.2-chrome81-ff75
+   steps:
     - uses: actions/checkout@v2
     - name: Install a project with a clean slate
       run: |
