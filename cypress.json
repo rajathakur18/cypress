@@ -1,0 +1,20 @@
+{
+  "defaultCommandTimeout": 10000,
+  "pageLoadTimeout": 30000,
+  "viewportWidth": 1300,
+  "viewportHeight": 880,
+  "reporter": "mochawesome",
+  "video": false,
+  "reporterOptions": {
+    "reportDir": "cypress/reports/mocha",
+    "overwrite": false,
+    "html": false,
+    "json": true,
+    "timestamp": "mmddyyy_HHMMss",
+    "reportPageTitle": "Envestnet"
+  },
+  "screenshotsFolder": "cypress/reports/screenshots",
+  "env": {
+    "env": "3.84.11.0/login"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "stubbing-window",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "clean:reports": "rimraf cypress/reports",
+    "pretest": "npm run clean:reports",
+    "scripts": "cypress run --headless --browser electron",
+    "combine-reports": "npx mochawesome-merge --reportDir cypress/reports/mocha > cypress/reports/mocha/output.json",
+    "generate-reports": "marge cypress/reports/mocha/output.json -f report -o cypress/reports/mochareports",
+    "posttest": "npm run combine-reports && npm run generate-reports",
+    "test": "npm run scripts || npm run posttest"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "cypress": "^8.3.1",
+    "cypress-commands": "^1.1.0",
+    "cypress-cucumber-preprocessor": "^4.2.0",
+    "cypress-file-upload": "^4.0.7",
+    "cypress-localstorage-commands": "^1.2.1",
+    "cypress-multi-reporters": "^1.5.0",
+    "cypress-xpath": "^1.6.2",
+    "mocha": "^9.1.1",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^2.1.0",
+    "mochawesome-report-generator": "^4.0.1"
+  }
+}

@@ -1,0 +1,138 @@
+[
+  {
+    "description": "  I want to shop on Tools QA Shopping Website",
+    "keyword": "Feature",
+    "name": "Shopping on Tools QA",
+    "line": 1,
+    "id": "shopping-on-tools-qa",
+    "tags": [],
+    "uri": "test.feature",
+    "elements": [
+      {
+        "id": "shopping-on-tools-qa;placing-order-for-2-shirts",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Placing Order for 2 Shirts",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I open the Account Page for Tools QA",
+            "result": {
+              "status": "undefined",
+              "duration": 255000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I do the registration for my user by entering username as \"aashishk17\" and email address as \"aashish.khetarpal.07@gmail.com\" and password as \"cypresstutorials\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "ShirtSpec",
+                      "Size",
+                      "Color"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "blue denim",
+                      "34",
+                      "Black"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "playboy",
+                      "40",
+                      "Grey"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I do the assertions for Register Button and Register successfully by entering new password as \"cypresstutorials77\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I do the verification on the Cart Page that it contains \"blue denim\" and \"playboy\" and do the checkout successfully",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I do the login with same credentials used above \"aashish.khetarpal.07@gmail.com\" and \"cypresstutorials\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "BillingFirstName",
+                      "BillingLastName",
+                      "StreetAddress",
+                      "City",
+                      "PostalCode",
+                      "Phone"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Aashish",
+                      "Khetarpal",
+                      "77",
+                      "Gurgaon",
+                      "122001",
+                      "7777777777"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I enter all the billing details and then place the order",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I verify that order has been successfully placed",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
